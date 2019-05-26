@@ -1,6 +1,6 @@
 import React from 'react';
 import render from'react-dom';
-import './Login.css';
+import './scss/login.scss';
 
 
 function Login (){
@@ -8,7 +8,7 @@ function Login (){
         <div className='login' id='login'>
             <div className='login-form'>
                 <h2>Sign in with</h2>
-                <div className='social-list'>
+                <div className='login-social-list'>
                     <ul>
                         <li><i className='fab fa-vk'></i></li>
                         <li><i className='fab fa-facebook-f'></i></li>
@@ -16,13 +16,15 @@ function Login (){
                     </ul>
                 </div>
                 <h2>OR</h2>
-                <div className='under-line'></div>
-                <form action='/login' className = 'form'>
+                <div className='login-under-line'></div>
+                <form method='POST' action='/login' className = 'login-sign-in-form'>
                     <label>User name or email</label>
-                    <input type='email' placeholder='Name' name='userName' className='input'></input>
+                    <input type='email' placeholder='Name' name='userName' className='login-input'></input>
+                    <div className='login-input-underline'></div>
                     <label>Password</label>
-                    <input type='password' placeholder='Password' name='password' className='input'></input>
-                    <input type='submit' className ='submit-btn' value='Submit'></input>
+                    <input type='password' placeholder='Password' name='password' className='login-input'></input>
+                    <div className='login-input-underline'></div>
+                    <input type='submit' className ='login-submit-btn' value='Submit'></input>
                 </form>
             </div>
         </div>

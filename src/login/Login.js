@@ -20,10 +20,8 @@ function Login (){
                 <form action='/login' className = 'form'>
                     <label>User name or email</label>
                     <input type='email' placeholder='Name' name='userName' className='input'></input>
-                    <div className='input-line-name'></div>
                     <label>Password</label>
                     <input type='password' placeholder='Password' name='password' className='input'></input>
-                    <div className='input-line-password'></div>
                     <input type='submit' className ='submit-btn' value='Submit'></input>
                 </form>
             </div>

@@ -7,18 +7,16 @@
 }
 
 .login{
-    &{
-        margin: auto;
-        margin-top: 25vh;
-        background: $white-color;
-        border-radius: 5px;
-        color: gray;
-        width: 25vw;
-        height: 50vh;
-        min-width: 300px;
-        min-height: 350px;
-        font-family: Arial, Helvetica, sans-serif;
-    }
+    margin: auto;
+    margin-top: 25vh;
+    background: $white-color;
+    border-radius: 5px;
+    color: gray;
+    width: 25vw;
+    height: 50vh;
+    min-width: 300px;
+    min-height: 430px;
+    font-family: Arial, Helvetica, sans-serif;
     &-form{
         margin-top: 10%;
         & h2{
@@ -49,6 +47,9 @@
             width: 45px;
             height: 45px;
             transition: all ease-in-out 500ms;
+            & i{
+                font-size: 1.2rem;
+            }
             &:hover{
                 background: $main-darknes;
             }

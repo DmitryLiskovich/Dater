@@ -47,6 +47,9 @@
             width: 45px;
             height: 45px;
             transition: all ease-in-out 500ms;
+            & i{
+                font-size: 1.2rem;
+            }
             &:hover{
                 background: $main-darknes;
             }

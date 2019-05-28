@@ -28,7 +28,7 @@ function Login (){
                         <div className='login-input-underline'></div>
                         <input type='submit' className ='login-submit-btn' value='Submit'></input>
                     </form>
-                    <p>Have not account?</p>
+                    <p>No account?</p>
                     <Link to='/sign-up'>
                         <p className='login-form-sign-up'>SIGN UP</p>
                     </Link>

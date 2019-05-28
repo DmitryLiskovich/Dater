@@ -8,7 +8,7 @@ function Signup (){
     return(
         <div className='sign' id='sign'>
             <div className='sign-form'>
-                <h2>Create account</h2>
+                <h2>Create an account</h2>
                 <form method='POST' action='/sign-up' className = 'sign-sign-in-form'>
                     <i className='fas fa-user sign-input-icon'></i>
                     <input type='text' placeholder='User name' name='userName' required className='sign-input'></input>

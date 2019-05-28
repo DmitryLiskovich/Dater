@@ -17,7 +17,7 @@ function Login (){
                             <li><i className='fab fa-google'></i></li>
                         </ul>
                     </div>
-                    <h3>OR</h3>
+                    <h2>OR</h2>
                     <div className='login-under-line'></div>
                     <form method='POST' action='/login' className = 'login-sign-in-form'>
                         <i className='fas fa-user login-input-icon'></i>

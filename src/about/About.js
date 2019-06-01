@@ -6,6 +6,7 @@ function About () {
 
     const [isOpen, setIsOpen] = useState(false);
     const [currentPost, setCurrentPost] = useState(1);
+
     const slider = (post) => {
         console.log(post);
         const posts = [`One from my hobbies is a sport. I started sport in 10 y.o. Now i can do many differents flips. I think it's amazing when you can do what other people can not do.`, 
@@ -27,7 +28,7 @@ function About () {
         
         return (
             <div>
-                <h2>The section only about me</h2>
+                <h2>Little more about me</h2>
                 <i class="fas fa-chevron-left about-section-3-prev" 
                 onClick={()=> post > 1 ? setCurrentPost(currentPost-1) : setCurrentPost(currentPost)}></i>
                 <div className={`about-section-3-image-${objsArray[post-1].image}`}></div>
@@ -50,9 +51,9 @@ function About () {
                     </div>
                 </div>
                 <ul className='about-points'>
-                    <li className={post === 1 ? 'about-point-active' : 'about-point'}></li>
-                    <li className={post === 2 ? 'about-point-active' : 'about-point'}></li>
-                    <li className={post === 3 ? 'about-point-active' : 'about-point'}></li>
+                    <li className={post === 1 ? 'about-point-active' : 'about-point'} onClick={()=>setCurrentPost(1)}></li>
+                    <li className={post === 2 ? 'about-point-active' : 'about-point'} onClick={()=>setCurrentPost(2)}></li>
+                    <li className={post === 3 ? 'about-point-active' : 'about-point'} onClick={()=>setCurrentPost(3)}></li>
                 </ul>
             </div>
         );   
@@ -71,13 +72,12 @@ function About () {
             <div className='about-under-line-revers'></div>
             <section className='about-section-1'>
                 <div className='about-section-1-content'>
-                    <div className='about-section-1-img'></div>
-                    <div className='about-section-1-text'>
+                    <div className='about-section-1-content-img'></div>
+                    <div className='about-section-1-content-text'>
                         <h2>Who am I?</h2>
                         <h3>I AM A <span>FRONT-END</span> DEVELOPER</h3>
                         <p>Hello, I'm a Front-End developer from Belarus. Development is my hobby. 
                             I can create big projects with HTML5, CSS3, JavaScript, React.js and Node.js. I like that i do. Are you interested?</p>
-                        <button className='about-btn'>PUSH THE BUTTON</button>
                     </div>
                 </div>
             </section>
@@ -92,14 +92,16 @@ function About () {
                                 <h3>Server for a mobile app on node.js</h3>
                                 <p>I have experience in creting node.js server for a mobile app created on 
                                     Xamarin. It's was be my first project. On this project I created 
-                                    simple RESTfull service. I like this project, becouse this helped me
+                                    simple RESTfull service. I like this project, because this helped me
                                     learn more about node.js.
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <p className='about-section-2-PS'>P.S. I have only one project now, but you can watching on this pretty kitty</p>
-                        <a className='about-app' href='http://194.158.210.249:30000/update/com.polesie.AndroidMech-Signed.apk'><div className='about-pretty'></div></a>
+                        <p className='about-section-2-PS'>P.S. I have only one project now, but you are can watching on this pretty kitty</p>
+                        <div  className='about-app' >
+                            <a href='http://194.158.210.249:30000/update/com.polesie.AndroidMech-Signed.apk'><div className='about-pretty'></div></a>
+                        </div>
                         <p>P.P.S if you click on this pretty kitty, you can download my project :)</p>
                 </div>
             </section>
@@ -110,9 +112,9 @@ function About () {
             <footer className='about-footer-main'>
                 <div className='about-footer'>
                     <ul className='about-footer-ul'>
-                        <li><i className='fab fa-facebook-f about-footer-li'></i></li>
-                        <li><i className='fab fa-vk about-footer-li'></i></li>
-                        <li><i className='fab fa-linkedin-in about-footer-li'></i></li>
+                        <li><a href='https://www.linkedin.com/in/dmitry-liskovich-175470174/'><i className='fab fa-linkedin-in about-footer-li'></i></a></li>
+                        <li><a href='skype:dimalisko'><i className='fab fa-skype about-footer-li'></i></a></li>
+                        
                     </ul>
                     <p>All right reserved &copy;</p>
                 </div>

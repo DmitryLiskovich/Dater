@@ -139,9 +139,8 @@ body{
             }
     
             &-img{
-                background: #55555588 url('../img/users.jpg') top left/cover;
+                background: url('../img/users.jpg') bottom center/cover;
                 min-height: 750px;
-                background-blend-mode: overlay;
                 width: 100%;
                 height: 100%;
                 grid-column: 1;
@@ -483,7 +482,7 @@ body{
         grid-gap: 12px;
         grid-template-columns: repeat(3, 30px);
     }
-    &-footer li{
+    &-footer li:first-child{
         background: #fff;
         text-align: center;
         padding-top: 4px;
@@ -495,6 +494,41 @@ body{
         &:hover{
             background: #9933ff;
             color: #fff; 
+        }
+    }
+    &-footer li:last-child{
+        background: #fff;
+        text-align: center;
+        padding-top: 4px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        transition: all ease-in-out 0.5s;
+        cursor: pointer;
+
+        &::before{
+            opacity: 0;
+            color: #fff;
+            content: 'DIMLISKO';
+            transform: translateX(60%);
+            position: absolute;
+            z-index: 1;
+            transition: all ease-in-out 0.5s;
+        }
+
+        &:hover{
+            background: #9933ff;
+            color: #fff;
+            transition: all ease-in-out 0.5s; 
+            &::before{
+                opacity: 1;
+                color: #fff;
+                content: 'DIMLISKO';
+                transform: translateX(40%);
+                position: absolute;
+                z-index: 1;
+                transition: all ease-in-out 0.5s;
+            }
         }
     }
 

@@ -100,7 +100,7 @@ function About () {
                         </div>
                         <p className='about-section-2-PS'>P.S. I have only one project now, but you are can watching on this pretty kitty</p>
                         <div  className='about-app' >
-                            <a href='http://194.158.210.249:30000/update/com.polesie.AndroidMech-Signed.apk'><div className='about-pretty'></div></a>
+                            <a href='myprojects.com'><div className='about-pretty'></div></a>
                         </div>
                         <p>P.P.S if you click on this pretty kitty, you can download my project :)</p>
                 </div>
@@ -113,8 +113,7 @@ function About () {
                 <div className='about-footer'>
                     <ul className='about-footer-ul'>
                         <li><a href='https://www.linkedin.com/in/dmitry-liskovich-175470174/'><i className='fab fa-linkedin-in about-footer-li'></i></a></li>
-                        <li><a href='skype:dimalisko'><i className='fab fa-skype about-footer-li'></i></a></li>
-                        
+                        <li><i className='fab fa-skype about-footer-li'></i></li>
                     </ul>
                     <p>All right reserved &copy;</p>
                 </div>

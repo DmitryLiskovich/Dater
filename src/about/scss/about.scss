@@ -517,6 +517,9 @@ body{
         border-radius: 50%;
         transition: all ease-in-out 0.5s;
         cursor: pointer;
+        & a{
+            color: #333;
+        }
         &:hover{
             background: #9933ff;
             color: #fff;

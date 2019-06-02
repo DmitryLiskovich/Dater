@@ -42,7 +42,7 @@ import {
 
 import rtlStyle from "assets/jss/material-dashboard-react/views/rtlStyle.jsx";
 
-import avatar from "assets/img/faces/Nietzsche.jpg";
+import avatar from "assets/img/faces/nietzsche.jpg";
 
 let bugs = [
   "طراح گرافیک از این متن به عنوان عنصری از ترکیب بندی برای پر کردن؟",

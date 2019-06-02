@@ -67,7 +67,7 @@ function About () {
                 <div className='about-header-symbol'>
                     <i className='fas fa-users'></i>
                 </div>
-                <h2>About us</h2>
+                <h2>About user</h2>
             </header>
             <div className='about-under-line-revers'></div>
             <section className='about-section-1'>
@@ -112,7 +112,7 @@ function About () {
             <footer className='about-footer-main'>
                 <div className='about-footer'>
                     <ul className='about-footer-ul'>
-                        <li><a href='https://www.linkedin.com/in/dmitry-liskovich-175470174/'><i className='fab fa-linkedin-in about-footer-li'></i></a></li>
+                        <li><a href='https://www.linkedin.com/in/dmitry-liskovich-175470174/' className='about-a'><i className='fab fa-linkedin-in about-footer-li'></i></a></li>
                         <li><i className='fab fa-skype about-footer-li'></i></li>
                     </ul>
                     <p>All right reserved &copy;</p>

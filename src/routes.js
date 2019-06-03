@@ -16,6 +16,7 @@ import Typography from "views/Typography/Typography.jsx";
 import Icons from "views/Icons/Icons.jsx";
 import Maps from "views/Maps/Maps.jsx";
 import NotificationsPage from "views/Notifications/Notifications.jsx";
+import Users from "users/Users"
 // core components/views for RTL layout
 import RTLPage from "views/RTLPage/RTLPage.jsx";
 
@@ -47,9 +48,15 @@ const dashboardRoutes = [
   {
     path: "/about",
     name: "About",
-    rtlName: "قائمة الجدول",
-    icon: "user",
+    icon: "about",
     component: About,
+    layout: "/admin"
+  },
+  {
+    path: "/listUser",
+    name: "Users",
+    icon: "us",
+    component: Users,
     layout: "/admin"
   },
   // {

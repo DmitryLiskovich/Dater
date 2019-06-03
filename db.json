@@ -21,17 +21,43 @@
   },
   "users": [
     {
-      "first_name": "",
-      "last_name": "",
-      "email": "",
-      "username": "",
-      "password": "",
-      "avatar": "",
-      "tasks": [],
-      "level": "",
-      "experience": "",
-      "permissions": "",
-      "role": ""
+      "first_name": "Dima",
+      "last_name": "Liskovich",
+      "email": "dimalis@email",
+      "username": "dimalis",
+      "password": "164200",
+      "avatar": "url",
+      "tasks": ["Create application", "Add new page"],
+      "level": "3",
+      "experience": "1",
+      "permissions": "1",
+      "role": "Good boy"
+    },
+    {
+      "first_name": "Dat",
+      "last_name": "Wu",
+      "email": "datWu@email",
+      "username": "WuDat",
+      "password": "1564689",
+      "avatar": "url",
+      "tasks": ["Create application", "Add new page"],
+      "level": "8",
+      "experience": "1",
+      "permissions": "1",
+      "role": "Good boy"
+    },
+    {
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "johnDoe@email",
+      "username": "JD",
+      "password": "1564689",
+      "avatar": "url",
+      "tasks": ["Sleep", "eat"],
+      "level": "-8",
+      "experience": "1",
+      "permissions": "1",
+      "role": "Good boy"
     }
   ]
 }

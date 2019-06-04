@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #fff;
+    background: $main-color;
 }
 
 
@@ -59,7 +59,7 @@ body{
             margin-left: 20px;
             font-size: 2rem;
             display: inline-block;
-            color: $white-color;
+            color: $main-color;
             font-family: Arial, Helvetica, sans-serif;
         }
 
@@ -69,7 +69,7 @@ body{
             width: 60px;
             height: 60px;
             border-radius: 50%;
-            background: $white-color;
+            background: $main-color;
             display: inline-block;
 
             & i{
@@ -86,7 +86,7 @@ body{
         min-height: 750px;
         min-width: 950px;
         height: 92vh;
-        background: #fff;
+        background: $main-color;
         color: #333;
         font-family: Arial, Helvetica, sans-serif;
         border-bottom-left-radius: 10px;
@@ -168,7 +168,7 @@ body{
 
     &-section-2{
         border-radius: 10px;
-        background: #fff;
+        background: $main-color;
         min-height: 800px;
         min-width: 950px;
         position: relative;
@@ -295,7 +295,7 @@ body{
         margin: auto;
         margin-top: 20px;
         text-align: center;
-        background: #fff;
+        background: $main-color;
         padding-top: 30px;
 
         & h2{
@@ -489,7 +489,7 @@ body{
         align-items: center;
         & p{
             font-style: italic;
-            color: #fff;
+            color: $main-color;
         }
         &-main{
             padding-top: 0% !important;
@@ -509,7 +509,7 @@ body{
     }
     &-footer li:first-child{
         color: #333;
-        background: #fff;
+        background: $main-color;
         text-align: center;
         padding-top: 4px;
         width: 30px;
@@ -522,14 +522,14 @@ body{
         }
         &:hover{
             background: #9933ff;
-            color: #fff;
+            color: $main-color;
             .about-a{
-                color: #fff !important;
+                color: $main-color !important;
             }
         }
     }
     &-footer li:last-child{
-        background: #fff;
+        background: $main-color;
         text-align: center;
         padding-top: 4px;
         width: 30px;
@@ -540,7 +540,7 @@ body{
 
         &::before{
             opacity: 0;
-            color: #fff;
+            color: $main-color;
             content: 'DIMLISKO';
             transform: translateX(60%);
             position: absolute;
@@ -550,11 +550,11 @@ body{
 
         &:hover{
             background: #9933ff;
-            color: #fff;
+            color: $main-color;
             transition: all ease-in-out 0.5s; 
             &::before{
                 opacity: 1;
-                color: #fff;
+                color: $main-color;
                 content: 'DIMLISKO';
                 transform: translateX(40%);
                 position: absolute;

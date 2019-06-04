@@ -14,7 +14,7 @@ p{
     margin: auto;
     margin-top: 25vh;
     border-radius: 5px;
-    color: $white-color;
+    color: $main-color;
     width: 25vw;
     height: 50vh;
     min-width: 300px;
@@ -41,7 +41,7 @@ p{
             color: #ddd;
             transition: all ease-in-out 0.5s;
             &:hover{
-                color: $white-color;
+                color: $main-color;
             }
         }
     }
@@ -67,7 +67,7 @@ p{
     }
     &-input{
         display: inline-block;
-        color: $white-color;
+        color: $main-color;
         background:transparent;
         height: 30px;
         width: 88%;
@@ -87,7 +87,7 @@ p{
         }
 
         &::placeholder{
-            color: $white-color;
+            color: $main-color;
             opacity: 1;
         }
 
@@ -121,7 +121,7 @@ p{
         border-radius: 20px;
         &:hover{
             background: rgba(178,36,239,1);
-            color: $white-color;
+            color: $main-color;
         }
     }
 

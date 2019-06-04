@@ -8,7 +8,6 @@ function About () {
     const [currentPost, setCurrentPost] = useState(1);
 
     const slider = (post) => {
-        console.log(post);
         const posts = [`One from my hobbies is a sport. I started sport in 10 y.o. Now i can do many differents flips. I think it's amazing when you can do what other people can not do.`, 
         `What can i say about my current work? Usually, I create 3d models and it's cool. But now i loved into a frontend developing`, 
         `I opened frontend developing to myself around few mounts ago. And now I like it's so much, and I can do it all my free time`];
@@ -19,10 +18,7 @@ function About () {
             {post: posts[1], title: title[1], image: image[1]},
             {post: posts[2], title: title[2], image: image[2]},
         ];
-
-        const test = {root : {backgroundImage: `url(${objsArray[post-1].image})`}};
-        console.log(test);
-
+        
         const currentPosts = `about-section-3-slider-post-slide-${post}`;
 
         

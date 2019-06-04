@@ -18,6 +18,8 @@ function Users() {
                         item.tasks.join(', '), item.level];
             })
             setData(usersDate);
+        }).catch(error => {
+            console.log(error);
         });
     })
 

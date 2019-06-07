@@ -72,7 +72,7 @@ function About () {
                         <h2>Who am I?</h2>
                         <h3>I AM A <span>FRONT-END</span> DEVELOPER</h3>
                         <p>Hello, I'm a Front-End developer from Belarus. Development is my hobby. 
-                            I can create big projects with HTML5, CSS3, JavaScript, React.js and Node.js. I like that i do. Are you interested?</p>
+                            I can create big projects with HTML5, CSS3, JavaScript, React.js and Node.js. I like what I do. Are you interested?</p>
                     </div>
                 </div>
             </section>
@@ -85,19 +85,18 @@ function About () {
                             className={isOpen ? 'about-section-2-image-active' : 'about-section-2-image'}></div>
                             <div className={isOpen ? 'about-section-2-image-discryption-active' : 'about-section-2-image-discryption'}>
                                 <h3>Server for a mobile app on node.js</h3>
-                                <p>I have experience in creting node.js server for a mobile app created on 
-                                    Xamarin. It's was be my first project. On this project I created 
-                                    simple RESTfull service. I like this project, because this helped me
+                                <p>I have experience in creating node.js server for a mobile app created on 
+                                    Xamarin. It was my first project. On this project I created 
+                                    simple RESTfull service. I like this project, because it helped me
                                     learn more about node.js.
                                 </p>
                             </div>
                             </div>
                         </div>
-                        <p className='about-section-2-PS'>P.S. I have only one project now, but you are can watching on this pretty kitty</p>
+                        <p className='about-section-2-PS'>P.S. I have only one project now, but you can watch this pretty kitty</p>
                         <div  className='about-app' >
                             <a href='myprojects.com'><div className='about-pretty'></div></a>
                         </div>
-                        <p>P.P.S if you click on this pretty kitty, you can download my project :)</p>
                 </div>
             </section>
             <section className='about-section-3'>

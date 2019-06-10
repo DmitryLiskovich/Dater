@@ -8,9 +8,9 @@ function About () {
     const [currentPost, setCurrentPost] = useState(1);
 
     const slider = (post) => {
-        const posts = [`One from my hobbies is a sport. I started sport in 10 y.o. Now i can do many differents flips. I think it's amazing when you can do what other people can not do.`, 
-        `What can i say about my current work? Usually, I create 3d models and it's cool. But now i loved into a frontend developing`, 
-        `I opened frontend developing to myself around few mounts ago. And now I like it's so much, and I can do it all my free time`];
+        const posts = [`One of my hobbies is sport. I started doing sport when I was 10 y.o. Now I can do many different flips. I think it's amazing when you can do what other people can’t.`, 
+        `What can I say about my current work? Usually, I create 3d models and it's cool. But now I have fallen in love with frontend developing.`, 
+        `I discovered frontend developing a few months ago. And now I like it so much, and I devote to it all my free time.`];
         const title = ['Sport', 'Current work', 'Front-end'];
         const image = ['sport','work','front'];
         const objsArray = [
@@ -23,7 +23,7 @@ function About () {
         
         return (
             <div>
-                <h2>Little more about me</h2>
+                <h2>A little more about me</h2>
                 <i class="fas fa-chevron-left about-section-3-prev" 
                 onClick={()=> post > 1 ? setCurrentPost(currentPost-1) : setCurrentPost(currentPost)}></i>
                 <div className={`about-section-3-image-${objsArray[post-1].image}`}></div>
@@ -86,7 +86,7 @@ function About () {
                             <div className={isOpen ? 'about-section-2-image-discryption-active' : 'about-section-2-image-discryption'}>
                                 <h3>Server for a mobile app on node.js</h3>
                                 <p>I have experience in creating node.js server for a mobile app created on 
-                                    Xamarin. It was my first project. On this project I created 
+                                    Xamarin. It was my first project. In this project, I created 
                                     simple RESTfull service. I like this project, because it helped me
                                     learn more about node.js.
                                 </p>
@@ -109,7 +109,7 @@ function About () {
                         <li><a href='https://www.linkedin.com/in/dmitry-liskovich-175470174/' className='about-a'><i className='fab fa-linkedin-in about-footer-li'></i></a></li>
                         <li><i className='fab fa-skype about-footer-li'></i></li>
                     </ul>
-                    <p>All right reserved &copy;</p>
+                    <p> <i className='fab fa-react'></i> This page created by React.js. All right reserved &copy;</p>
                 </div>
             </footer>
         </div>

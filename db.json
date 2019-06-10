@@ -34,19 +34,6 @@
       "role": "Good boy"
     },
     {
-      "first_name": "Dat",
-      "last_name": "Wu",
-      "email": "datWu@email",
-      "username": "WuDat",
-      "password": "1564689",
-      "avatar": "url",
-      "tasks": ["Create application", "Add new page"],
-      "level": "8",
-      "experience": "1",
-      "permissions": "1",
-      "role": "Good boy"
-    },
-    {
       "first_name": "John",
       "last_name": "Doe",
       "email": "johnDoe@email",

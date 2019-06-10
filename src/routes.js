@@ -21,7 +21,7 @@ import Users from "users/Users"
 import RTLPage from "views/RTLPage/RTLPage.jsx";
 
 const dashboardRoutes = [
-  {
+  /*{
     path: "/dashboard",
     name: "Dashboard",
     rtlName: "لوحة القيادة",
@@ -44,7 +44,7 @@ const dashboardRoutes = [
     icon: "content_paste",
     component: TableList,
     layout: "/admin"
-  },
+  },*/
   {
     path: "/about",
     name: "About",

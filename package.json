@@ -9,6 +9,7 @@
     "chartist": "^0.11.2",
     "classnames": "^2.2.6",
     "cross-env": "^5.2.0",
+    "gh-pages": "^2.0.1",
     "history": "^4.9.0",
     "node-sass": "^4.12.0",
     "perfect-scrollbar": "^1.4.0",
@@ -22,10 +23,13 @@
     "react-scripts": "3.0.1",
     "react-swipeable-views": "^0.13.3"
   },
+  "homepage": "http://DmitryLiskovich.github.io/admin/about",
   "scripts": {
     "dev": "yarn run start",
     "start": "react-scripts start && json-server --watch db.json --port 3001",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",

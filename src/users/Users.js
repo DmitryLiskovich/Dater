@@ -6,9 +6,10 @@ import GridItem from "components/Grid/GridItem.jsx";
 import Card from "components/Card/Card.jsx";
 import CardHeader from "components/Card/CardHeader.jsx";
 import CardBody from "components/Card/CardBody.jsx";
-import { Form, FormGroup, Label, Input, Button } from "reactstrap";
+import { Button } from "reactstrap";
 import "./users.scss";
 import { ModalFrame } from "./ModalFrame";
+import SortTable from "components/SortTable/SortTable.js";
 
 function Users() {
   const [data, setData] = useState([]);
@@ -17,21 +18,68 @@ function Users() {
     (async () => {
       try {
         const result = await axios("http://localhost:8080/users");
-        console.log(result.data);
-        const usersData = result.data.map(item => [
-          item.first_name,
-          item.last_name,
-          item.user_name,
-          item.tasks,
-          item.level
-        ]);
-        console.log(usersData);
+        const usersData = result.data.map(item => {
+          return {
+            id: item.id,
+            firstName: item.first_name,
+            lastName: item.last_name,
+            userName: item.user_name,
+            tasks: item.tasks,
+            level: item.level
+          };
+        });
         setData(usersData);
       } catch (e) {
         console.log(e);
       }
     })();
   }, []);
+
+  const deleteUser = id => {
+    axios
+      .delete("http://localhost:8080/users", {
+        data: {
+          id: id
+        }
+      })
+      .then(response => {
+        if (response.status === 200) {
+          axios.get("http://localhost:8080/users").then(result => {
+            const usersData = result.data.map(item => {
+              return {
+                id: item.index,
+                firstName: item.first_name,
+                lastName: item.last_name,
+                userName: item.user_name,
+                tasks: item.tasks,
+                level: item.level
+              };
+            });
+            setData(usersData);
+          });
+        }
+      });
+  };
+
+  const updateUser = data => {
+    axios.patch("http://localhost:8080/users", data).then(response => {
+      if (response.status === 200) {
+        axios.get("http://localhost:8080/users").then(result => {
+          const usersData = result.data.map(item => {
+            return {
+              id: item.id,
+              firstName: item.first_name,
+              lastName: item.last_name,
+              userName: item.user_name,
+              tasks: item.tasks,
+              level: item.level
+            };
+          });
+          setData(usersData);
+        });
+      }
+    });
+  };
 
   const addUser = e => {
     e.preventDefault();
@@ -46,15 +94,16 @@ function Users() {
       .then(response => {
         if (response.status === 200) {
           axios.get("http://localhost:8080/users").then(result => {
-            console.log(result.data);
-            const usersData = result.data.map(item => [
-              item.first_name,
-              item.last_name,
-              item.user_name,
-              item.tasks,
-              item.level
-            ]);
-            console.log(usersData);
+            const usersData = result.data.map(item => {
+              return {
+                id: item.id,
+                firstName: item.first_name,
+                lastName: item.last_name,
+                userName: item.user_name,
+                tasks: item.tasks,
+                level: item.level
+              };
+            });
             setData(usersData);
           });
         }
@@ -77,7 +126,12 @@ function Users() {
             <p>Information about all users</p>
           </CardHeader>
           <CardBody>
-            <Table
+            <SortTable
+              data={data}
+              deleteUser={deleteUser}
+              update={updateUser}
+            />
+            {/* <Table
               tableHeaderColor="primary"
               tableHead={[
                 "First Name",
@@ -87,7 +141,7 @@ function Users() {
                 "Level"
               ]}
               tableData={data}
-            />
+            /> */}
           </CardBody>
         </Card>
         <Button
